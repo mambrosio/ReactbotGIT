@@ -6,8 +6,4 @@ module.exports ={
     googleClientEmail:   process.env.GOOGLE_CLIENT_EMAIL,
     google_Private_Key:    JSON.parse(process.env.GOOGLE_PRIVATE_KEY),
 
-    //googlePrivateKey: JSON.parse (process.env.GOOGLE_PRIVATE_KEY),
-
-    //googlePrivateKey: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n')
-
     }
