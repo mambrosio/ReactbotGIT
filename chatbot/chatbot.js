@@ -50,10 +50,6 @@ eventQuery: async function(event, parameters= {}) {
       return responses;
    },
 
-
-
-
-
 /////
    handleAction: function (responses){
      return responses;
