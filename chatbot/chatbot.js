@@ -6,6 +6,7 @@ const config = require('../config/keys');
 const sessionClient = new dialogFlow.SessionsClient();
 const sessionPath = sessionClient.sessionPath(config.googleProjectID, config.dialogFlowSessionID);
 
+
 module.exports={
 textQuery: async function(text, parameters= {}) {
     let self = module.exports;

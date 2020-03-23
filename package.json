@@ -1,7 +1,6 @@
 {
   "name": "outlinebot",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "engines": {
     "node": "v10.16.3",
@@ -21,5 +20,15 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mambrosio/chatbotnodeudemy.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/mambrosio/chatbotnodeudemy/issues"
+  },
+  "homepage": "https://github.com/mambrosio/chatbotnodeudemy#readme",
+  "description": ""
 }
