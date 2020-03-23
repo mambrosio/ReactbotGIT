@@ -17,8 +17,4 @@ module.exports = app =>{
         res.send(responses[0].queryResult);
         console.log(req.body);
          }); 
-
-    // app.post('/api/df_event_query',(req, res)=>{
-    //    res.send({'do':'event query'})
-     //});
 }
