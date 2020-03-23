@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "engines": {
-    "node": "v10.16.3",
+    "node": "v13.11.1",
     "npm": "6.14.3"
   },
   "scripts": {
@@ -14,9 +14,14 @@
   "license": "ISC",
   "dependencies": {
     "13": "0.0.0",
+    "again": "0.0.1",
+    "and": "0.0.3",
     "body-parser": "^1.19.0",
     "dialogflow": "^1.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "it": "^1.1.1",
+    "will": "0.0.1",
+    "work": "^0.4.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
