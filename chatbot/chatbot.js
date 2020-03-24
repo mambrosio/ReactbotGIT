@@ -8,10 +8,8 @@ const credentials = {
   client_email: config.googleClientEmail,
   private_key:  config.googlePrivateKey,
 };
-
 const sessionClient = new dialogFlow.SessionsClient({projectID, credentials});
 const sessionPath   = sessionClient.sessionPath(config.googleProjectID, config.dialogFlowSessionID);
-
 module.exports={
 textQuery: async function(text, parameters= {}) {
     let self = module.exports;
