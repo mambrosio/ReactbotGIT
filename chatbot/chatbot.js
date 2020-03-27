@@ -43,7 +43,7 @@ textQuery: async function(text, parameters= {}) {
       responses = await self.handleAction(responses);
       return responses;
    },
-//// event
+
 eventQuery: async function(event, parameters= {}) {
     let self = module.exports;
     const request = {
