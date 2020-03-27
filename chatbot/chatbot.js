@@ -2,12 +2,10 @@
 const structjsnon = require('./structjson');
 const dialogflow = require('dialogflow');
 const config = require('../config/keys');
-//const uuid = require('uuid');
+
 const projectID = config.googleProjectID;
 
-console.log("projectID:");
-console.log(projectID);
-
+console.log("projectID:");console.log(projectID);
 
 const credentials = {
  client_email: config.googleClientEmail,
@@ -15,14 +13,9 @@ const credentials = {
 };
 
 const sessionClient = new dialogflow.SessionsClient({projectID, credentials});
-console.log("config:=>");
-console.log(config);
-console.log("sessionClient:=========>");
-console.log(sessionClient);
+console.log("config:=>");console.log(config);
+console.log("sessionClient:=========>");console.log(sessionClient);
 
-//const sessionClient = new dialogflow.Sessionsclient({projectID, credentials});
-
-//const sessionPath   = sessionClient.sessionPath(projectID, "1");
 const sessionPath   = sessionClient.sessionPath(projectID, config.dialogflowSessionID);
 
 //dialogFlowSessionID
@@ -52,15 +45,15 @@ textQuery: async function(text, parameters= {}) {
    },
 //// event
 eventQuery: async function(event, parameters= {}) {
-    
     let self = module.exports;
     const request = {
-        session: sessionPath,
-        queryInput: {
+      session: sessionPath,
+      queryInput: {
           event: {
-            name: event,
-            languageCode: config.dialogFlowSessionLanguajeCode,
-          },
+          name: event,
+          languageCode: config.dialogflowSessionLanguajeCode,
+        },
+  
         },
         queryParams: {
         payload: {
@@ -72,7 +65,8 @@ eventQuery: async function(event, parameters= {}) {
       responses = await self.handleAction(responses);
       return responses;
    },
-   handleAction: function (responses){
+   handleAction: function (responses)
+   {
      return responses;
    }
 }

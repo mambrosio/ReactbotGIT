@@ -1,13 +1,19 @@
 {
   "name": "outlinebot",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "engines": {
+  "engines":
+   {
     "node": "v13.11.1",
     "npm": "6.14.3"
-  },
-  "scripts": {
+   },
+  "scripts":
+   {
     "start": "node index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
     "backend": "nodemon index.js",
     "frontend": "npm run start --prefix client",
     "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\"",
@@ -15,7 +21,8 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies":
+   {
     "13": "0.0.0",
     "again": "0.0.1",
     "and": "0.0.3",
@@ -29,19 +36,31 @@
     "nodejs": "0.0.0",
     "will": "0.0.1",
     "work": "^0.4.1",
-    "worked": "0.0.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
-  },
-  "repository": {
+    "worked": "0.0.2",
+
+    "actions-on-google": "^2.12.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "google-oauth-jwt": "^0.2.0",
+    "mongoose": "^5.7.8"
+   },
+  "devDependencies":
+   {
+    "nodemon": "^2.0.2",
+    "concurrently": "^5.0.0",
+    "http-proxy-middleware": "^0.20.0",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+  "repository": 
+  {
     "type": "git",
-    "url": "git+https://github.com/mambrosio/chatbotnodeudemy.git"
+    "url": "https://github.com/mambrosio/chatbotnodeudemy.git"
   },
   "keywords": [],
-  "bugs": {
+  "bugs": 
+  {
     "url": "https://github.com/mambrosio/chatbotnodeudemy/issues"
-  },
+   },
   "homepage": "https://github.com/mambrosio/chatbotnodeudemy#readme",
   "description": ""
-}
+}}
