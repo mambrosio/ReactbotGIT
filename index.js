@@ -5,7 +5,7 @@ const app=express();
 
 app.use(bodyParser.json());
 
-require('./routes/dialogFlowRoutes')(app);
+require('./routes/dialogflowRoutes')(app);
 
 const newLocal = 5000;
 const PORT =process.env.PORT || newLocal;

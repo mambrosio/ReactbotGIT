@@ -8,7 +8,10 @@
   },
   "scripts": {
     "start": "node index.js",
-    "backend": "nodemon index.js"
+    "backend": "nodemon index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -19,9 +22,14 @@
     "body-parser": "^1.19.0",
     "dialogflow": "^1.2.0",
     "express": "^4.17.1",
+    "for": "^0.1.0",
     "it": "^1.1.1",
+    "its": "^1.0.2",
+    "me": "^0.3.0",
+    "nodejs": "0.0.0",
     "will": "0.0.1",
-    "work": "^0.4.1"
+    "work": "^0.4.1",
+    "worked": "0.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

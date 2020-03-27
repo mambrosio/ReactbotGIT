@@ -1,15 +1,34 @@
 'use strict';
 const structjsnon = require('./structjson');
-const dialogFlow = require('dialogFlow');
+const dialogflow = require('dialogflow');
 const config = require('../config/keys');
+//const uuid = require('uuid');
 const projectID = config.googleProjectID;
 
+console.log("projectID:");
+console.log(projectID);
+
+
 const credentials = {
-  client_email: config.googleClientEmail,
-  private_key:  config.googlePrivateKey,
+ client_email: config.googleClientEmail,
+ private_key:  config.googlePrivateKey
 };
-const sessionClient = new dialogFlow.SessionsClient({projectID, credentials});
-const sessionPath   = sessionClient.sessionPath(config.googleProjectID, config.dialogFlowSessionID);
+
+const sessionClient = new dialogflow.SessionsClient({projectID, credentials});
+console.log("config:=>");
+console.log(config);
+console.log("sessionClient:=========>");
+console.log(sessionClient);
+
+//const sessionClient = new dialogflow.Sessionsclient({projectID, credentials});
+
+//const sessionPath   = sessionClient.sessionPath(projectID, "1");
+const sessionPath   = sessionClient.sessionPath(projectID, config.dialogflowSessionID);
+
+//dialogFlowSessionID
+console.log("sessionPath:=========>");
+console.log(sessionPath);
+
 module.exports={
 textQuery: async function(text, parameters= {}) {
     let self = module.exports;
@@ -18,7 +37,7 @@ textQuery: async function(text, parameters= {}) {
         queryInput: {
           text: {
             text: text,
-            languageCode: config.dialogFlowSessionLanguajeCode
+            languageCode: config.dialogflowSessionLanguajeCode,
           },
         },
         queryParams: {
@@ -40,7 +59,7 @@ eventQuery: async function(event, parameters= {}) {
         queryInput: {
           event: {
             name: event,
-            languageCode: config.dialogFlowSessionLanguajeCode
+            languageCode: config.dialogFlowSessionLanguajeCode,
           },
         },
         queryParams: {
