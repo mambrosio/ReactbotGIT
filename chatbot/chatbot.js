@@ -38,6 +38,8 @@ textQuery: async function(text, parameters= {}) {
         data: parameters
               }
         }
+
+
     };
     let responses = await sessionClient.detectIntent(request);
       responses = await self.handleAction(responses);
@@ -69,4 +71,5 @@ eventQuery: async function(event, parameters= {}) {
    {
      return responses;
    }
+
 }
