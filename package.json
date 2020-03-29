@@ -1,66 +1,62 @@
 {
-  "name": "outlinebot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "engines":
-   {
-    "node": "v13.11.1",
-    "npm": "6.14.3"
-   },
-  "scripts":
-   {
-    "start": "node index.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "backend": "nodemon index.js",
-    "frontend": "npm run start --prefix client",
-    "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+ "name": "outlinebot",
+ "version": "1.0.0",
+ "description": "CHATBOT -UDEMY",
+ "main": "index.js",
+ "engines": {
+  "yarn": "1.x",
+  "node": "v13.11.1",
+  "npm": "6.x"
+ },
+ "scripts": {
+  "start": "node index.js",
+  "build": "react-scripts build",
+  "test": "react-scripts test --env=jsdom",
+  "eject": "react-scripts eject",
+  "main": "app.js",
+  "backend": "nodemon index.js",
+  "frontend": "npm run start --prefix client",
+  "dev": "concurrently \"npm run backend\"  \"npm run start --prefix client\"",
+  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+ },
+ "author": "",
+ "license": "ISC",
+ "dependencies": {
+  "13": "0.0.0",
+  "actions-on-google": "^2.12.0",
+  "again": "0.0.1",
+  "and": "0.0.3",
+  "body-parser": "^1.19.0",
+  "dialogflow": "^1.2.0",
+  "dialogflow-fulfillment": "^0.6.1",
+  "express": "^4.17.1",
+  "for": "^0.1.0",
+  "google-oauth-jwt": "^0.2.0",
+  "it": "^1.1.1",
+  "its": "^1.0.2",
+  "me": "^0.3.0",
+  "mongoose": "^5.7.8",
+  "nodejs": "0.0.0",
+  "will": "0.0.1",
+  "work": "^0.4.1",
+  "worked": "0.0.2"
+ },
+ "devDependencies": {
+  "nodemon": "^2.0.2",
+  "concurrently": "^5.0.0",
+  "http-proxy-middleware": "^0.20.0",
+  "scripts": {
+   "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies":
-   {
-    "13": "0.0.0",
-    "again": "0.0.1",
-    "and": "0.0.3",
-    "body-parser": "^1.19.0",
-    "dialogflow": "^1.2.0",
-    "express": "^4.17.1",
-    "for": "^0.1.0",
-    "it": "^1.1.1",
-    "its": "^1.0.2",
-    "me": "^0.3.0",
-    "nodejs": "0.0.0",
-    "will": "0.0.1",
-    "work": "^0.4.1",
-    "worked": "0.0.2",
-
-    "actions-on-google": "^2.12.0",
-    "dialogflow-fulfillment": "^0.6.1",
-    "google-oauth-jwt": "^0.2.0",
-    "mongoose": "^5.7.8"
-   },
-  "devDependencies":
-   {
-    "nodemon": "^2.0.2",
-    "concurrently": "^5.0.0",
-    "http-proxy-middleware": "^0.20.0",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-   },
-  "repository": 
-  {
-    "type": "git",
-    "url": "https://github.com/mambrosio/chatbotnodeudemy.git"
+  "repository": {
+   "type": "git",
+   "url": "https://github.com/mambrosio/reactbotgit.git"
   },
   "keywords": [],
-  "bugs": 
-  {
-    "url": "https://github.com/mambrosio/chatbotnodeudemy/issues"
-   },
-  "homepage": "https://github.com/mambrosio/chatbotnodeudemy#readme",
+  "bugs": {
+   "url": "https://github.com/mambrosio/reactbotgit/issues"
+  },
+  "homepage": "https://github.com/mambrosio/reactbotgit#readme",
   "description": ""
-}}
+ }
+}
